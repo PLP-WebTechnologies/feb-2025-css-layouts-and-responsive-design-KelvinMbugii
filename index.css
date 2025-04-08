@@ -1,0 +1,64 @@
+html{
+    background-image: url(https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+form{
+    background-color: #af0848;
+    padding: 20px;
+    border-radius: 8px;
+}
+.intro-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+.intro-images img{
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.container{
+    width: 60%;
+    height:auto;
+    padding: 20px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+}
+h2{
+    color: rgb(206, 103, 19);
+}
+h3{
+    color: #e70b3af6;
+}
+#btn{
+    background-color: #83042a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media(max-width: 600px){
+    form{
+        background-color: #26db0e;
+    }
+    .intro-images{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .intro-images img{
+        max-height: 200px;
+    }
+
+    label{
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+}
